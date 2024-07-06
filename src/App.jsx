@@ -1,7 +1,17 @@
 import "./app.scss";
 
+// Components
+import Navbar from "./component/navbar/Navbar";
+import HomePage from "./pages/HomePage/HomePage";
+
+
 const App = () => {
-  return <h1>Hello World Project</h1>;
+  return (
+    <>
+      <Navbar />
+      <HomePage/>
+    </>
+  );
 };
 
 export default App;

@@ -1,13 +1,13 @@
 @import "../../../app.scss";
 
 .banner-card {
-   
- 
+  height: 100vh;
   .carousel {
     position: relative;
     width: 100%;
     height: 300px;
     overflow: hidden;
+    margin-top: 18vh;
   }
 
   .carousel-image {

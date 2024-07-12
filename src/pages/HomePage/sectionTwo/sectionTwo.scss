@@ -1,0 +1,107 @@
+@import "../../../app.scss";
+
+.section-two {
+  min-height: 500px;
+  width: 90%;
+  margin: 100px auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 20px;
+  .left-card {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    .section-two-left-product {
+      height: auto;
+      background-color:rgb(245, 247, 248);
+      display: flex;
+      padding: 30px 30px;
+      height: 330px;
+      border-radius: 10px;
+      div {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+        .offer {
+          font-size: 25px;
+        }
+        .name {
+          font-size: 30px;
+          text-align: center;
+        }
+        .price {
+          font-size: 20px;
+        }
+        button {
+          padding: 15px 40px;
+          background-color: rgb(181, 193, 142);
+          color: #fff;
+          font-family: inherit;
+          font-weight: bold;
+          border-radius: 30px;
+          font-size: 20px;
+          border-bottom: 10px;
+          margin-top: 20px;
+        }
+        button:hover {
+          border: 3px solid rgb(181, 193, 142);
+          background-color: transparent;
+          color: rgb(181, 193, 142);
+        }
+      }
+      img {
+        height: 100%;
+        width: 50%;
+        border-radius: 10px;
+      }
+    }
+  }
+  .right-card {
+    padding: 20px;
+    padding-top: 30px;
+    background-color:rgb(245, 247, 248);
+    border-radius: 10px;
+    padding-bottom: 40px;
+    .section-two-right-product {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+      div {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+        p {
+          font-size: 50px;
+          text-align: center;
+          font-weight: bold;
+        }
+        button {
+          padding: 15px 40px;
+          background-color: rgb(181, 193, 142);
+          color: #fff;
+          font-family: inherit;
+          font-weight: bold;
+          border-radius: 30px;
+          font-size: 20px;
+          border-bottom: 10px;
+        }
+        button:hover {
+          border: 3px solid rgb(181, 193, 142);
+          background-color: transparent;
+          color: rgb(181, 193, 142);
+        }
+      }
+      img {
+        height: auto;
+        height: 400px;
+        width: 60%;
+        border-radius: 10px;
+      }
+    }
+  }
+}

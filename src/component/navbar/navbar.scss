@@ -50,11 +50,29 @@
       .link {
         font-weight: 500;
         font-size: 21px;
+        padding-bottom: 5px;
         outline: none;
+        cursor: pointer;
+        transition: color 0.5s ease-in-out, border-bottom 0.5s ease-in-out;
       }
-      .link.active{
-        color: #00337C;
+      
+      .link.active {
+        color: rgb(173, 229, 135);
+        position: relative;
+        border-bottom: 2px solid rgb(175, 209, 152);
+        transition: color 0.5s ease-in-out, border-bottom 0.5s ease-in-out;
+        animation: fadeIn 0.5s ease-in-out;
       }
+      
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+      
     }
   }
   .all-categories {

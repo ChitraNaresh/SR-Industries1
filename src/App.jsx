@@ -9,9 +9,32 @@ import AboutComponent from "./pages/aboutComponent/AboutComponent";
 import ContactUs from "./pages/contactUs/ContactUs";
 import Footer from "./component/footer/Footer";
 
+//Assets
+import whatsapp from "./assets/whatsapp (1).png";
+import gmail from "./assets/gmail.png";
+
+const socialMediaLinks = [whatsapp, gmail];
+
 const App = () => {
   return (
     <div>
+      <div className="social-media-links">
+        <div>
+          <a href="https://wa.me/919550973572" target="_blank">
+            <img src={whatsapp} />
+            WhatsApp
+          </a>
+        </div>
+        <div>
+          <a
+            href="mailto:182g1a0314@gmail.com?subject=Hello&body=I%20want%20to%20contact%20you"
+            target="_blank"
+          >
+            <img src={gmail} alt="" />
+            Gmail
+          </a>
+        </div>
+      </div>
       <BrowserRouter>
         <Navbar />
         <Routes>
@@ -20,7 +43,7 @@ const App = () => {
           <Route path="/about-us" element={<AboutComponent />} />
           <Route path="/contact-us" element={<ContactUs />} />
         </Routes>
-        <Footer/>
+        <Footer />
       </BrowserRouter>
     </div>
   );
